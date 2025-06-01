@@ -31,8 +31,7 @@ export default function JsonLd() {
             target: {
                 "@type": "EntryPoint",
                 urlTemplate: "https://belloinfo.com.br/busca?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
+            }
         }
     };
 

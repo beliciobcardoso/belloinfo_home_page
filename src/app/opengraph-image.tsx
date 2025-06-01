@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import './opengraph-image.css';
 
 // Route segment config
 export const runtime = 'edge';
@@ -25,35 +26,11 @@ export default async function Image() {
 
     return new ImageResponse(
         (
-            <div
-                style={{
-                    fontSize: 48,
-                    background: 'white',
-                    width: '100%',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: 48,
-                }}
-            >
-                <div style={{
-                    display: 'flex',
-                    fontSize: 64,
-                    fontWeight: 'bold',
-                    color: '#000',
-                    marginBottom: 24
-                }}>
-                    Bello<span style={{ color: '#0066CC' }}>Info</span>
+            <div className="container">
+                <div className="title">
+                    Bello<span className="title-span">Info</span>
                 </div>
-                <div style={{
-                    display: 'flex',
-                    fontSize: 36,
-                    textAlign: 'center',
-                    color: '#666',
-                    maxWidth: 800
-                }}>
+                <div className="description">
                     Soluções em Tecnologia da Informação para o seu Negócio
                 </div>
             </div>

@@ -102,10 +102,10 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
   const apiEndpoint = "/api/collect-metrics";
 
   // Descomente para enviar para seu próprio endpoint
-  /*
-  if (process.env.NODE_ENV === 'production') {
+
+  if (process.env.NODE_ENV === "production") {
     const body = JSON.stringify({
-      dsn: 'https://belloinfo.com.br', // Data Source Name
+      dsn: "https://belloinfo.com.br", // Data Source Name
       id: metric.id,
       page: window.location.pathname,
       href: window.location.href,
@@ -120,24 +120,27 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
     } else {
       fetch(apiEndpoint, {
         body,
-        method: 'POST',
+        method: "POST",
         keepalive: true,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { "Content-Type": "application/json" },
       });
     }
   }
-  */
 }
 
 // Função auxiliar para obter a velocidade de conexão
+type NavigatorConnection = {
+  effectiveType?: string;
+};
+
 function getConnectionSpeed(): string {
   if (
     typeof navigator !== "undefined" &&
     "connection" in navigator &&
     navigator.connection &&
-    "effectiveType" in navigator.connection
+    "effectiveType" in (navigator.connection as object)
   ) {
-    return (navigator.connection as any).effectiveType;
+    return (navigator.connection as NavigatorConnection).effectiveType || "";
   }
 
   return "";
