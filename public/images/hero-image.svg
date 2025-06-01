@@ -17,16 +17,16 @@
   <circle cx="200" cy="500" r="100" fill="#0066cc" opacity="0.1" />
   <circle cx="700" cy="150" r="80" fill="#0066cc" opacity="0.1" />
   
-  <!-- Formas abstratas de tecnologia -->
-  <path d="M600,300 Q650,200 700,300 T800,300" stroke="#0066cc" stroke-width="3" fill="none" />
-  <path d="M100,200 Q200,100 300,200 T500,200" stroke="#0066cc" stroke-width="3" fill="none" />
+  <!-- Formas abstratas de tecnologia com curvas mais suaves -->
+  <path d="M600,300 Q650,180 700,300 T800,300" stroke="#0066cc" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M100,200 Q200,80 300,200 T500,200" stroke="#0066cc" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
   
   <!-- Elementos centrais -->
   <g transform="translate(400,300)">
-    <!-- Ícone estilizado -->
-    <rect x="-70" y="-70" width="140" height="140" rx="20" fill="#0066cc" />
-    <rect x="-50" y="-50" width="100" height="100" rx="15" fill="white" />
-    <rect x="-30" y="-30" width="60" height="60" rx="10" fill="#0066cc" />
+    <!-- Ícone estilizado com bordas mais arredondadas -->
+    <rect x="-70" y="-70" width="140" height="140" rx="35" fill="#0066cc" />
+    <rect x="-50" y="-50" width="100" height="100" rx="30" fill="white" />
+    <rect x="-30" y="-30" width="60" height="60" rx="20" fill="#0066cc" />
   </g>
   
   <!-- Nome da empresa -->

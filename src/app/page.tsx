@@ -57,8 +57,8 @@ export default function Home() {
               alt="BelloInfo Tecnologia - Soluções em Tecnologia da Informação"
               fill
               priority
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain rounded-ss-[50px] rounded-[60px]"
+
             />
           </div>
         </section>
