@@ -14,8 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    // Adicione outras páginas do seu site conforme necessário
-    // Por exemplo:
+    /* Páginas comentadas para serem adicionadas quando estiverem prontas
     {
       url: `${baseUrl}/servicos`,
       lastModified: currentDate,
@@ -34,5 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    */
   ];
 }

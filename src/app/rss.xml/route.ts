@@ -17,19 +17,23 @@ export async function GET() {
     <lastBuildDate>${lastBuildDate}</lastBuildDate>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>BelloInfo - Soluções em TI</title>
+      <link>${baseUrl}</link>
+      <description>Serviços de tecnologia da informação, desenvolvimento web e suporte técnico para empresas e pessoas físicas.</description>
+      <pubDate>${lastBuildDate}</pubDate>
+      <guid>${baseUrl}</guid>
+    </item>
+    <!-- Mais itens serão adicionados conforme o conteúdo do site for expandido -->
+    <!-- 
+    <item>
       <title>Desenvolvimento de Sites Modernos</title>
       <link>${baseUrl}/blog/desenvolvimento-sites-modernos</link>
       <description>Conheça as tecnologias mais modernas para desenvolvimento de sites e aplicações web em 2025.</description>
       <pubDate>${lastBuildDate}</pubDate>
       <guid>${baseUrl}/blog/desenvolvimento-sites-modernos</guid>
     </item>
-    <item>
-      <title>Soluções de Hospedagem Confiáveis</title>
-      <link>${baseUrl}/blog/solucoes-hospedagem</link>
-      <description>Como escolher a melhor solução de hospedagem para o seu site ou aplicação web.</description>
-      <pubDate>${lastBuildDate}</pubDate>
-      <guid>${baseUrl}/blog/solucoes-hospedagem</guid>
-    </item>
+    -->
+    
   </channel>
 </rss>`;
 

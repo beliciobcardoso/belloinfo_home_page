@@ -6,12 +6,11 @@ export default function JsonLd() {
         "@type": "Organization",
         name: "BelloInfo",
         url: "https://belloinfo.com.br",
-        logo: "https://belloinfo.com.br/logo.png",
+        logo: "https://belloinfo.com.br/icons/icon-512x512.png",
         sameAs: [
-            "https://www.facebook.com/beliciobcardoso",
+            "https://github.com/beliciobcardoso",
             "https://twitter.com/beliciobcardoso",
-            "https://www.linkedin.com/company/beliciobcardoso",
-            "https://www.instagram.com/beliciobcardoso" // Corrected Instagram URL
+            "https://www.linkedin.com/company/beliciobcardoso"
         ],
         contactPoint: {
             "@type": "ContactPoint",
@@ -24,7 +23,8 @@ export default function JsonLd() {
     const websiteData: WithContext<WebSite> = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: "BelloInfo",
+        name: "BelloInfo - Soluções em TI",
+        description: "Serviços de tecnologia da informação, desenvolvimento web e suporte técnico para empresas e pessoas físicas.",
         url: "https://belloinfo.com.br",
         potentialAction: {
             "@type": "SearchAction",
@@ -32,6 +32,7 @@ export default function JsonLd() {
                 "@type": "EntryPoint",
                 urlTemplate: "https://belloinfo.com.br/busca?q={search_term_string}"
             }
+            // Propriedade query-input removida porque não é suportada pelo tipo SearchActionLeaf
         }
     };
 
