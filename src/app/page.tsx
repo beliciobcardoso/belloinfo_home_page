@@ -121,13 +121,13 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">Informações de Contato</h3>
               <div className="space-y-4 text-lg">
                 <p className="flex items-center gap-2">
-                  <span className="text-primary">📞</span> (XX) XXXXX-XXXX
+                  <span className="text-primary">📞</span> (71) 9 9370-6925
                 </p>
                 <p className="flex items-center gap-2">
                   <span className="text-primary">✉️</span> contato@belloinfo.com.br
                 </p>
                 <p className="flex items-center gap-2">
-                  <span className="text-primary">📍</span> São Paulo, SP - Brasil
+                  <span className="text-primary">📍</span> Salvador, BA - Brasil
                 </p>
                 <div className="flex gap-4 mt-6">
                   <a href="https://facebook.com/beliciobcardoso" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -139,7 +139,7 @@ export default function Home() {
                   <a href="https://instagram.com/beliciobcardoso" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <div className="h-10 w-10 rounded-full bg-card border flex items-center justify-center">IG</div>
                   </a>
-                  <a href="https://linkedin.com/company/beliciobcardoso" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <a href="https://linkedin.com/in/beliciobcardoso" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <div className="h-10 w-10 rounded-full bg-card border flex items-center justify-center">LI</div>
                   </a>
                 </div>
@@ -191,8 +191,8 @@ export default function Home() {
                 <h4 className="font-semibold mb-4">Contato</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>contato@belloinfo.com.br</li>
-                  <li>(XX) XXXXX-XXXX</li>
-                  <li>São Paulo, SP - Brasil</li>
+                  <li>(71) 9 9370-6925</li>
+                  <li>Salvador, BA - Brasil</li>
                 </ul>
               </div>
             </div>
