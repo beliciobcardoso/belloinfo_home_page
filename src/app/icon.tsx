@@ -5,8 +5,8 @@ export const runtime = 'edge';
 
 // Image metadata
 export const size = {
-    width: 32,
-    height: 32,
+    width: 18,
+    height: 18,
 };
 
 export const contentType = 'image/png';
@@ -17,17 +17,7 @@ export default function Icon() {
         (
             // ImageResponse JSX element
             <div
-                style={{
-                    fontSize: 24,
-                    background: '#111',
-                    width: '100%',
-                    height: '100%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: '#fff',
-                    fontWeight: 600,
-                }}
+                className="flex h-full w-full items-center justify-center bg-[#111] text-white font-bold rounded-full font-['Arial', 'sans-serif']"
             >
                 BI
             </div>

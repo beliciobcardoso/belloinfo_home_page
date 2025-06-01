@@ -6,11 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'BelloInfo - Soluções em Tecnologia da Informação',
   description: 'Serviços de TI de alta qualidade, incluindo desenvolvimento web, suporte técnico e consultoria para empresas e pessoas físicas.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
   openGraph: {
     title: 'BelloInfo - Tecnologia para o seu Negócio',
     description: 'Soluções de TI personalizadas para impulsionar seu negócio com tecnologias modernas e suporte especializado.',

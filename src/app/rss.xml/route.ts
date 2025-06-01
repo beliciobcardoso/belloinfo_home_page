@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config/site";
 
-export default function RSSFeed() {
+export async function GET() {
   const baseUrl = siteConfig.url;
 
   // Gerar a data atual para lastBuildDate

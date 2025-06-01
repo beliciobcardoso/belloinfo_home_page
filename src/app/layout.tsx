@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -16,6 +16,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "BelloInfo - Soluções em TI",
   description: "Serviços de tecnologia da informação, desenvolvimento web e suporte técnico para empresas e pessoas físicas.",
@@ -32,10 +42,6 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   manifest: '/manifest.json',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
   appleWebApp: {
     title: 'BelloInfo',
     statusBarStyle: 'black-translucent',
@@ -73,11 +79,6 @@ export const metadata: Metadata = {
     description: "Serviços de tecnologia da informação, desenvolvimento web e suporte técnico.",
     card: 'summary_large_image',
     images: ['https://belloinfo.com.br/twitter-image.jpg'],
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
   },
   verification: {
     google: 'google-site-verification-code',
